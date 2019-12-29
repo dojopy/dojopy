@@ -15,6 +15,17 @@ class ModelBlog(models.Model):
     author = models.CharField(max_length=200, default="")
     texto = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
+    url_image = models.CharField(max_length=200, default="")
+    texto_breve = models.CharField(max_length=200, default="")
 
     def __str__(self):
         return '{} - {}'.format(self.author, self.created_date)
+
+
+class ModelContact(models.Model):
+    name = models.CharField(max_length=200, default='', blank=False)
+    email = models.EmailField(max_length=200, blank=False)
+    mensaje = models.CharField(max_length=200, default="")
+
+    def __str__(self):
+        self.email

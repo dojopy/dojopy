@@ -1,0 +1,25 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BLOG</title>
+    </head>
+
+    <body>
+        <h1>Bienvenido a mi blog</h1>
+
+        {% for item in data %}
+        <h2>  <a href="/post/1"> {{item.title}} </a>  </h2>
+        <h3>   {{ item.texto }}  </h3>
+        <h6>   {{ item.autor }}  </h6>
+        <h6>   {{ item.created_date }}  </h6>
+        <br>
+
+         {% endfor %}
+
+    </body>
+</html>

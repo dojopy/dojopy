@@ -1,0 +1,23 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>hola!</title>
+    </head>
+
+
+    <body>
+        <h1>hola Esteban!</h1>
+
+        {% for item in data %}
+                <h2 style="color:blue">   {{ item.nombre }}  </h2>
+                <h2 style="color:blue">   {{ item.mensaje }}  </h2>
+                <br>
+         {% endfor %}
+
+    </body>
+</html>

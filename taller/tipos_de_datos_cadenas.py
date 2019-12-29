@@ -1,18 +1,35 @@
 # TIPO DE DATOS CADENAS
 
-variable_cadena = 'len2ov oa1c'
-cadena_con_numero = 'abc2312'
-cadena_mutliple = 'lenovo icore7 hola'
-variable_string = str()
+cadena_mensaje = 'hola mundO que tal mundO jhonatan'
 
-# print(variable_cadena)
-# print(cadena_con_numero)
-# print(cadena_mutliple)
-# print(variable_string)
+variable_cadena = cadena_mensaje.replace('hola', 'genial')
 
-# print(dir(variable_cadena))
-variable_cadena = variable_cadena.replace(' ', '')
-print(variable_cadena.isalnum())
+variable_find =  cadena_mensaje.find('elon')
+
+convertir_mayusc = cadena_mensaje.upper()
+print(convertir_mayusc)
+
+convertir_minu = cadena_mensaje.lower()
+print(convertir_minu)
+
+contador = cadena_mensaje.count('Holaman')
+print(contador)
+
+convert_title = cadena_mensaje.capitalize()
+print(convert_title)
+
+dividir_text = cadena_mensaje.split('mundO')
+print(dividir_text)
+
+existe_al_inicio = cadena_mensaje.startswith('982u981u2')
+print(existe_al_inicio)
+
+existe_al_final = cadena_mensaje.endswith('henry')
+print(existe_al_final)
+
+print(dir(cadena_mensaje))
+
+# print(variable_cadena.isalnum())
 # print(variable_cadena.endswith('ovo'))
 
 # print(variable_cadena.find('ovo'))
@@ -31,5 +48,3 @@ print(variable_cadena.isalnum())
 # print(cadena.split('lenovo'))
 # print(cadena.startswith('mac'))
 # print(cadena)
-
-

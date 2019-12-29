@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>hola mundo</h1>
+        {% for i in data %}
+            <h3>{{i.author}} </h3>
+            <h3>{{i.title}} </h3>
+            <h3>{{i.texto}} </h3>
+            <h3>{{i.created_date}} </h3>
+            <h3>{{i.texto_breve}} </h3>
+            <h3>{{i.url_image}} </h3>
+        {% endfor %}
+
+    </body>
+</html>

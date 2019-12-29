@@ -1,0 +1,31 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+<!-- Page Header -->
+{% block header %}
+<header class="masthead" style="background-image: url({{data.url_image}})">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>{{data.title}}</h1>
+          <span class="subheading">{{data.texto_breve}}</span>
+          <span class="meta">{{data.created_date}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="container">
+        <p>
+            {{data.texto}}
+        </p>
+    </div>
+
+{% endblock %}

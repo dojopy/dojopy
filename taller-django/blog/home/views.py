@@ -14,4 +14,7 @@ def home(request):
 def blog(request):
     obj = ModelBlog.objects.all()
     obj = obj.values()
-    return render(request, 'blog.html', {'data': obj})
+    return render(request, 'blog/blog.html', {'data': obj})
+
+def contact(request):
+    return render(request, 'contacto.html')

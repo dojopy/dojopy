@@ -1,6 +1,8 @@
 from concurrent.futures import ThreadPoolExecutor, wait
 from requests import get
 from random import shuffle
+
+
 def my_query(url):
     return len(get(url).content)
 

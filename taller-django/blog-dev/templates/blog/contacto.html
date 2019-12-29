@@ -1,0 +1,43 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+
+<!-- Page Header -->
+{% block header %}
+<header class="masthead" style="background-image: url(https://www.yomeanimoyvos.com/wp-content/uploads/2013/03/8-contactate-con-nosotros-720x405.jpg)">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>Contacto</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+
+
+{% block content %}
+
+<form action="{% url 'contact' %}" method="post">
+    <center>
+        <div class='jumbotron'>
+
+            {% csrf_token %}
+            {% for field in register_form %}
+            <div class='form-group'>
+                <label for="{{ field.name }}">{{ field.label }}</label>
+                {{ field }}
+            </div>
+            {% endfor %}
+            <br>
+            <center><button type="submit" class="btn btn-success btn-lg">Enviar</button></center>
+        </div>
+        </center>
+</form>
+
+
+{% endblock%}

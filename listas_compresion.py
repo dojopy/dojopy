@@ -10,5 +10,5 @@ my_list = range(10000000)
 def get_pairs_cool(my_list):
     return [n for n in my_list if not (n % 2)]
 
->>>  get_pairs_cool(my_list)
->>>  'time output: 0.54s'
+get_pairs_cool(my_list)
+#'time output: 0.54s'
